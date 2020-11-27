@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Unit2</title>
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<script src="functii.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<h1 class="header">ROSCA ANDREI </h1>
+			<p class="mail">Rosca.Ca.Marius@utcluj.didatec.ro</p>
+		</div>
+		<div id="tabel">
+			<p>Specificatii tehnice ale statiei principale de lucru</p>
+			<table>
+				<tr>
+					<th>Denumire componenta</th><th>Producător</th><th>Parametri</th>
+				</tr>
+				<tr>
+					<td>I7-7700HQ</td><td>INTEL</td><td>2.8GHz</td>
+				</tr>
+				<tr>
+					<td>GTX 1050</td><td>nVidia</td><td>1830 MHz</td>
+				</tr>
+				<tr>
+					<td>16GB RAM</td><td>hyperX</td><td>2.800 MHz</td>
+				</tr>
+			</table>
+		</div>
+		<div id="main">
+			<p>Structura retelei personale si accesul la internet</p>
+			<img class="Retea" src="reteaPersonala.jpg" alt="Imaginea nu a fost gasita."/>
+			<p class="center">Caracterisiticile conexiunii la retea</p>
+			<ul class="center">
+				<li>Adresa MAC : B0-6E-BF-1C-64-44</li>
+				<li>Adresa IP : 192.168.1.24</li>
+				<li>Debit la Download : 328.3 Mbps</li>
+				<li>Debit la Upload: 142.7 Mbps</li>
+			</ul>
+		</div>
+		<div id="Slideshow">
+			<p ondblclick="Activate()">Utilizarea resurselor (slideshow)</p>
+			<div id="SlideshowPoze">
+				<button class="buttonLeft" onclick="changeImageLeft()">&#10094;  </button>
+				<button class="buttonRight" onclick="changeImageRight()">&#10095; </button>
+				<img class="images" src="resurse1.jpg" alt="Eroare la incarcarea imaginii"/>
+				<img class="images" src="resurse2.jpg" alt="Eroare la incarcarea imaginii"/>
+				<img class="images" src="resurse3.jpg" alt="Eroare la incarcarea imaginii"/>
+				<span class="cercGol" style="left: 46%"></span><span onclick="afisareCerc('cerc1'); return false" class="cercPlin" style="left:46%; opacity:1"></span>
+				<span class="cercGol" style="left: 50%"></span><span onclick="afisareCerc('cerc2'); return false" class="cercPlin" style="left:50%; opacity:0"></span>
+				<span class="cercGol" style="left: 54%"></span><span onclick="afisareCerc('cerc3'); return false" class="cercPlin" style="left:54%; opacity:0"></span>
+				</div>
+			</div>
+		</div><br><br><br>
+	</body>
+</html>
